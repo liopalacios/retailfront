@@ -1,0 +1,30 @@
+<div class="card">
+    <div class="card-header">
+        <h2 class="card-title text-center">Registrar Cliente</h2>
+    </div>
+    <div class="card-body">
+        <form #myForm="ngForm" (ngSubmit)="saveClient(myForm)">            
+            <div class="form-group row">
+                <label for="" class="col-md-3">Nombre</label>
+                <input type="text" ngModel name="nombre" class="form-control col-md-9" aria-describedby="Nombre">
+            </div>
+            <div class="form-group row">
+                <label for="" class="col-md-3">Apellido</label>
+                <input type="text" ngModel name="apellido" class="form-control col-md-9" aria-describedby="Apellido">
+            </div>
+            <div class="form-group row">
+                <label for="" class="col-md-3">DNI</label>
+                <input type="text" ngModel name="dni" class="form-control col-md-9" aria-describedby="DNI">
+            </div>
+            <div class="form-group row">
+                <label for="" class="col-md-3">Edad</label>
+                <input type="text" ngModel name="edad" class="form-control col-md-9" aria-describedby="Edad">
+            </div>
+            <div class="form-group row">
+                <label for="" class="col-md-3">Fecha Nacimiento</label>
+                <input type="text" ngModel name="fechanac" class="form-control col-md-9" aria-describedby="Fecha">
+            </div>
+            <button type="submit" class="btn btn-outline-primary bt-lg btn-block">Enviar Cliente</button>
+        </form>
+    </div>
+</div>

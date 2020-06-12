@@ -1,0 +1,30 @@
+<div class="container">
+    <h3 class="ml-3">Clientes</h3>
+    <div class="col-md-12">
+        <div class="row">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                      <th scope="col">NOMBRE</th>
+                      <th scope="col">APELLIDO</th>
+                      <th scope="col">EDAD</th>
+                      <th scope="col">DNI</th>
+                      <th scope="col">NACIMIENTO</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let client of datos">
+                            <th scope="row">{{ client.nombre }}</th>
+                            <td>
+                                {{ client.apellido }}
+                            </td>
+                            <td>{{ client.edad | number}}</td>
+                            <td>{{ client.dni }}</td>
+                            <td>{{ client.fechanac }}</td>
+                          </tr>
+                    </tbody>
+            </table>
+            
+        </div>
+    </div>
+</div>
