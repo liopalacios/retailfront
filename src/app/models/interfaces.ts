@@ -4,4 +4,10 @@ export interface Client {
     apellido: string
     edad: number
     fechanac: string
+    fecha: string
+}
+export interface Kpiclient {
+    promedio: number
+    desviacion: number
+    total: number    
 }

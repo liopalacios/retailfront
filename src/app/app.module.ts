@@ -9,12 +9,14 @@ import { CreateclientsComponent } from './components/createclients/createclients
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { PrediccionComponent } from './components/prediccion/prediccion.component';
 @NgModule({
   declarations: [
     AppComponent,
     ListclientsComponent,
     KpiclientsComponent,
-    CreateclientsComponent
+    CreateclientsComponent,
+    PrediccionComponent
   ],
   imports: [
     BrowserModule,

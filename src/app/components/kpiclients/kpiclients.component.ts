@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../../services/clients.service';
+import { Kpiclient } from 'src/app/models/interfaces';
 
 @Component({
   selector: 'app-kpiclients',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KpiclientsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private api: ApiService) { }
 
   ngOnInit(): void {
+    this.api.getKpi().subscribe(datos => this.datos = datos)
   }
-
+  datos: Kpiclient
 }
