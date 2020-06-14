@@ -11,14 +11,14 @@ export class ApiService {
 
   }
   getClientes(): Observable<Client[]>{
-    return this.httpClient.get<Client[]>('http://localhost:8080/api/listclientes')
+    return this.httpClient.get<Client[]>('http://serviceretail-env.eba-sfmttg6g.us-west-2.elasticbeanstalk.com/api/listclientes')
   }
   getKpi(): Observable<Kpiclient>{
-    return this.httpClient.get<Kpiclient>('http://localhost:8080/api/kpideclientes')
+    return this.httpClient.get<Kpiclient>('http://serviceretail-env.eba-sfmttg6g.us-west-2.elasticbeanstalk.com/api/kpideclientes')
   }
   save(client: Client): Observable<Client> {
     console.log(client)
-    return this.httpClient.post<Client>('http://localhost:8080/api/creacliente', client,{
+    return this.httpClient.post<Client>('http://serviceretail-env.eba-sfmttg6g.us-west-2.elasticbeanstalk.com/api/creacliente', client,{
       headers: new HttpHeaders({
         'Access-Control-Allow-Origin':'*',
         'Access-Control-Allow-Methods':'*',
